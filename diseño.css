@@ -1,0 +1,295 @@
+body{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+.grid__container{
+    display: grid;
+    grid-template-areas: 'header''main''footer';
+}
+
+/*header*/
+
+nav{
+    background: rgb(235, 181, 213);
+    height: 125px;
+    width: 100%;
+}
+
+.enlace{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+.logo{
+    width: 150px;
+}
+
+nav ul{
+    margin-right: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3.5rem 30rem;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+}
+
+li a.active, li a:hover{
+    background: rgb(211, 132, 179);
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/*header*/
+
+/*footer*/
+
+footer{
+    width: 100%;
+    padding: 10px 0px;
+    background-image: url(../background-footer.svg);
+    background-size: cover;
+    background-color: rgb( 235, 181, 213);
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.box__footer .logo img{
+    width: 200px;
+}
+
+.box__footer{
+    max-width: 140px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color: #000000;
+    font-weight: 700;
+    text-align: center;
+}
+
+.box__footer a{
+    height: 25px;
+    margin-top: 15px;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 30%;
+    text-align: center;
+}
+
+.box__footer a:hover{
+    background: rgb(226, 134, 189);
+    transition: 0.5s;
+}
+
+/*footer*/
+
+.main{
+    grid-area: main;
+}
+
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 100px 40px;
+}
+
+.tituloprodructos{
+    position: relative;
+    top: 120px;
+}
+
+/*esto lo hice para practicar*/
+
+.img{
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    transition: 0.5s;
+    filter: blur(0px);
+    border-radius: 2%;
+}
+
+.img:hover {
+    transform: scale(1.07);
+    border-radius: 5%;
+    filter: blur(0.8px);
+}
+
+.page__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: 2px solid rgb(197, 149, 178);
+}
+
+.product__container{
+    margin-left: 15px;
+    padding: 2px 16px;
+}
+
+.product__container:hover{
+    box-shadow: 0 8px 16px 0 rgb(58, 56, 56);
+    transition: all 0.7s;
+    border-radius: 3%;
+    zoom: 102%;
+}
+
+.product__container img{
+    width: 390px;
+}
+
+.img__producto{
+    object-fit: cover;
+    transition: 0.5s;
+    border-radius: 2%;
+}
+
+.img__producto:hover{
+    transform: scale(1.2);
+    border-radius: 5%;
+}
+
+.button__add{
+    border: none;
+    font-size: 16px;
+    transition-duration: 40ms;
+    text-align: center;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    border: 2px solid rgb( 235, 181, 213);
+}
+
+.button__add:hover{
+    background-color: rgb( 235, 181, 213);
+    color: white;
+    transition: 0.2s;
+}
+
+.sumbit__button{
+    border: none;
+    font-size: 16px;
+    transition-duration: 40ms;
+    text-align: center;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    border: 2px solid rgb( 235, 181, 213);
+}
+
+.contacto{
+    width: 400px;
+    padding: 70px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    margin-left: 650px;
+    border-radius: 4px;
+    background-color: rgb(196, 134, 172);
+    color: white;
+}
+.input__contacto{
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom:10px;
+        border: 1px solid rgb( 235, 181, 213);
+}
+
+@media (max-width: 1000px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 960px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 200px;
+        height: 20px;
+        background: rgb( 235, 181, 213);
+        top: 110px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+        border-radius: 20px;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 10px;
+        text-align: start;
+    }
+    nav ul li a{
+        font-size: 18px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: rgb( 235, 181, 213);
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
