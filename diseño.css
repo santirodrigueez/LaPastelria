@@ -29,6 +29,11 @@ nav{
     width: 150px;
 }
 
+.dropdown-menu{
+
+}
+
+/*
 nav ul{
     margin-right: 20px;
     margin: 0;
@@ -59,7 +64,7 @@ li a.active, li a:hover{
     background: rgb(211, 132, 179);
     transition: .5s;
 }
-
+*/
 .checkbtn{
     font-size: 30px;
     color: #fff;
@@ -73,7 +78,6 @@ li a.active, li a:hover{
 #check{
     display: none;
 }
-
 /*header*/
 
 /*footer*/
@@ -147,7 +151,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 100px 40px;
+    padding: 100px 50px;
 }
 
 .tituloprodructos{
@@ -176,7 +180,8 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    border: 2px solid rgb(197, 149, 178);
+    border-top: 2px solid rgb(197, 149, 178);
+    margin-bottom: 60px;
 }
 
 .product__container{
@@ -188,7 +193,7 @@ footer{
     box-shadow: 0 8px 16px 0 rgb(58, 56, 56);
     transition: all 0.7s;
     border-radius: 3%;
-    zoom: 102%;
+    zoom: 100.5%;
 }
 
 .product__container img{
@@ -201,9 +206,64 @@ footer{
     border-radius: 2%;
 }
 
+.img__destacado{
+    width: 100%;
+}
+
+.destacado{
+    transition: 1s;
+    margin-bottom: -140px;
+}
+
+.destacado:hover{
+    transform: scale(1.01);
+    transition: 1s;   
+}
+
+.button_destacado{
+    position: relative;
+    top: -290px;
+    left: 57px;
+    border: none;
+    font-size: 16px;
+    transition-duration: 40ms;
+    text-align: center;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    border: 2px solid rgb( 235, 181, 213);
+}
+
+.button_destacado:hover{
+    background-color: rgb( 235, 181, 213);
+    color: white;
+    transition: 0.2s;
+}
+
 .img__producto:hover{
     transform: scale(1.2);
     border-radius: 5%;
+}
+
+.text__destacado{
+    background: #575757;
+    padding: 1px;
+    position: absolute;
+    width: 100%;
+    opacity: 77%;
+}
+
+.text__destacado__title{
+    color: white;
+    font-size: 40px;
+    margin-left: 60px;
+}
+
+.text__destacado__title2{
+    color: white;
+    font-size: 28px;
+    margin-left: 60px;
+    margin-top: -42px;
 }
 
 .button__add{

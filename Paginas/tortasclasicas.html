@@ -7,95 +7,115 @@
     <title>Tortas Clasicas</title>
     <link rel="stylesheet" href="../diseño.css">
     <script src="https://kit.fontawesome.com/8cedad4e99.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
     <div class="grid__container">
-        <header class="header">
+        <header class="header bg-primary">
             <div class="nav__container">
-                <nav>
-                    <input type="checkbox" id="check">
-                    <label for="check" class="checkbtn">
-                        <i class="fas fa-bars"></i>
-                    </label>
-                    <a href="../index.html" class="enlace">
-                        <img src="../Imagenes/Logo.jpg" alt="" class="logo">
-                    </a>
-                    <ul>
-                        <li class="li"><a href="../index.html"<i class="fa-solid fa-house"></i>Inicio</a></li>
-                        <li class="li"><a href="#" <i class="fa-solid fa-bag-shopping"></i>Productos</a></li>
-                        <li class="li"><a href="./contacto.html" <i class="fa-solid fa-phone"></i>Contactos</a></li>                        
-                        <li class="li"><a href="#" <i class="fa-solid fa-car"></i>Envios</a></li>           
-                    </ul>  
-                </nav>
+                <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="/index.html"><img class="logo" src="/Imagenes/Logo.jpg"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Contactos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Envios</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Productos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">   
+                                <li><a class="dropdown-item" href="/Paginas/tortasclasicas.html">Tortas Clasicas</a></li>
+                                <li><a class="dropdown-item" href="/Paginas/minitortas.html">Mini Tortas</a></li>
+                                <li><a class="dropdown-item" href="/Paginas/boxdulces.html">Box Dulces</a></li>
+                                <li><a class="dropdown-item" href="/Paginas/macarons.html">Macarons</a></li>
+                                <li><a class="dropdown-item" href="/Paginas/cotillon.html">Cotillon</a></li>
+                                <li><a class="dropdown-item" href="/Paginas/especiales.html">Especiales</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
             </div>
         </header>
                 <div class="page__content">  
                     <div class="product__container">
                         <h3>Lemon Pie</h3>
-                        <img class="img__producto" src="../Imagenes/producto1.jpg">
+                        <img class="img__producto" src="../Imagenes/LemonPie.jpg">
                         <h3>$3.250</h3>
                         <button class="button__add">Agregar al carrito</button>
                     </div>
                 
                     <div class="product__container">
                         <h3>Marquise Frutos Rojos</h3>
-                        <img class="img__producto" src="../Imagenes/producto2.jpg">
+                        <img class="img__producto" src="../Imagenes/Marquise.jpg">
                         <h3>$3.950</h3>
                         <button class="button__add">Agregar al carrito</button>
                     </div>
                 
                     <div class="product__container">
                         <h3>Chocotorta Dulce De Leche</h3>
-                        <img class="img__producto" src="../Imagenes/producto3.jpg">
+                        <img class="img__producto" src="../Imagenes/ChocotortaDDL.jpg">
                         <h3>$3.750</h3>
                         <button class="button__add">Agregar al carrito</button>
                     </div>
                 
                     <div class="product__container">
                         <h3>Torta Oreo Dulce De Leche</h3>
-                        <img class="img__producto" src="../Imagenes/producto4.jpg">
+                        <img class="img__producto" src="../Imagenes/OreoDDL.jpg">
                         <h3>$4.950</h3>
                         <button class="button__add">Agregar al carrito</button>
                     </div>
                 
                     <div class="product__container">
                         <h3>Brownie Clasico</h3>
-                        <img class="img__producto" src="../Imagenes/producto5.jpg">
+                        <img class="img__producto" src="../Imagenes/Brownie.jpg">
                         <h3>$3.750</h3>
                         <button class="button__add">Agregar al carrito</button>
                     </div>
                 
                     <div class="product__container">
                         <h3>Cheescake</h3>
-                        <img class="img__producto" src="../Imagenes/producto6.jpg">
+                        <img class="img__producto" src="../Imagenes/Cheescake.jpg">
                         <h3>$3.900</h3>
                         <button class="button__add">Agregar al carrito</button>
                     </div>
                 
                     <div class="product__container">
                         <h3>Tiramisu</h3>
-                        <img class="img__producto" src="../Imagenes/producto7.jpg">
+                        <img class="img__producto" src="../Imagenes/Tiramisu.jpg">
                         <h3>$4.250</h3>
                         <button class="button__add">Agregar al carrito</button>
                     </div>
                 
                     <div class="product__container">
-                        <h3>Chocotorta Awante Boque</h3>
-                        <img class="img__producto" src="../Imagenes/producto8.jpg">
+                        <h3>Chocotorta de Boca</h3>
+                        <img class="img__producto" src="../Imagenes/ChocotortaBoca.jpg">
                         <h3>$12.000</h3>
                         <button class="button__add">Agregar al carrito</button>
                     </div>
                 
                     <div class="product__container">
                         <h3>Mousse Chocolate</h3>
-                        <img class="img__producto" src="../Imagenes/producto9.jpg">
+                        <img class="img__producto" src="../Imagenes/Mousse.jpg">
                         <h3>$4.500</h3>
                         <button class="button__add">Agregar al carrito</button>
                     </div>
                 
                     <div class="product__container">
                         <h3>Lasagna De Chocolate</h3>
-                        <img class="img__producto" src="../Imagenes/producto10.jpg">
+                        <img class="img__producto" src="../Imagenes/Lasagna.jpg">
                         <h3>$3.250</h3>
                         <button class="button__add">Agregar al carrito</button>
                     </div>
@@ -110,9 +130,9 @@
             
             <div class="box__footer">
                 <h2>Navegacion</h2>
-                <a href="../index.html"<i class="fa-solid fa-house"></i>Inicio</a>
+                <a href="/index.html"<i class="fa-solid fa-house"></i>Inicio</a>
                 <a href="#" <i class="fa-solid fa-bag-shopping"></i>Productos</a>
-                <a href="./contacto.html" <i class="fa-solid fa-phone"></i>Contactos</a>
+                <a href="/contacto.html" <i class="fa-solid fa-phone"></i>Contactos</a>
                 <a href="#" <i class="fa-solid fa-car"></i>Envios</a>
             </div>
         
@@ -123,6 +143,7 @@
             </div>
             </div>
         </footer>
-    </div>    
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>        
 </body>
 </html>
