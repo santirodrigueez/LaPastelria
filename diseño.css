@@ -29,42 +29,6 @@ nav{
     width: 150px;
 }
 
-.dropdown-menu{
-
-}
-
-/*
-nav ul{
-    margin-right: 20px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 3.5rem 30rem;
-}
-
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-
-nav ul li a{
-    color: #fff;
-    font-size: 18px;
-    padding: 7px 13px;
-    border-radius: 4px;
-    text-transform: uppercase;
-    transition: all 0.3s linear;
-}
-
-li a.active, li a:hover{
-    background: rgb(211, 132, 179);
-    transition: .5s;
-}
-*/
 .checkbtn{
     font-size: 30px;
     color: #fff;
@@ -223,7 +187,7 @@ footer{
 .button_destacado{
     position: relative;
     top: -290px;
-    left: 57px;
+    left: 90px;
     border: none;
     font-size: 16px;
     transition-duration: 40ms;
@@ -247,7 +211,7 @@ footer{
 
 .text__destacado{
     background: #575757;
-    padding: 1px;
+    padding: 35px;
     position: absolute;
     width: 100%;
     opacity: 77%;
@@ -263,7 +227,7 @@ footer{
     color: white;
     font-size: 28px;
     margin-left: 60px;
-    margin-top: -42px;
+    margin-top: -10px;
 }
 
 .button__add{
@@ -311,7 +275,7 @@ footer{
         margin-bottom:10px;
         border: 1px solid rgb( 235, 181, 213);
 }
-
+/*
 @media (max-width: 1000px){
     .enlace{
         padding-left: 20px;
@@ -352,4 +316,4 @@ footer{
     #check:checked ~ ul{
         left:0;
     }
-}
+}*/

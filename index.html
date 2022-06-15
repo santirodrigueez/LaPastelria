@@ -7,26 +7,47 @@
     <title>Hecho En La Pasteleria</title>
     <link rel="stylesheet" href="./diseño.css">
     <script src="https://kit.fontawesome.com/8cedad4e99.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
     <div class="grid__container">
-        <header class="header">
-            <div class="nav__container">
-                <nav>
-                    <input type="checkbox" id="check">
-                    <label for="check" class="checkbtn">
-                        <i class="fas fa-bars"></i>
-                    </label>
-                    <a href="/index.html" class="enlace">
-                        <img src="/Imagenes/Logo.jpg" alt="" class="logo">
-                    </a>
-                    <ul>
-                        <li class="li"><a href="index.html"<i class="fa-solid fa-house"></i>Inicio</a></li>
-                        <li class="li"><a href="#" <i class="fa-solid fa-bag-shopping"></i>Productos</a></li>
-                        <li class="li"><a href="./contacto.html"<i class="fa-solid fa-phone"></i></i>Contactos</a></li>                        
-                        <li class="li"><a href="#" <i class="fa-solid fa-car"></i>Envios</a></li>           
-                    </ul>  
-                </nav>
+        <header class="header bg-primary ">
+            <div class="nav__container fs-4">
+                <nav class="navbar navbar-expand-lg bg-#ebb5d5">
+                    <div class="container-fluid">
+                      <a class="navbar-brand position-absolute" href="/index.html"><img class="logo" src="/Imagenes/Logo.jpg"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active text-white border-2" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Productos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">   
+                                <li><a class="dropdown-item" href="/Paginas/tortasclasicas.html">Tortas Clasicas</a></li>
+                                <li><a class="dropdown-item" href="/Paginas/minitortas.html">Mini Tortas</a></li>
+                                <li><a class="dropdown-item" href="/Paginas/boxdulces.html">Box Dulces</a></li>
+                                <li><a class="dropdown-item" href="/Paginas/macarons.html">Macarons</a></li>
+                                <li><a class="dropdown-item" href="/Paginas/cotillon.html">Cotillon</a></li>
+                                <li><a class="dropdown-item" href="/Paginas/especiales.html">Especiales</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active text-white" href="contacto.html">Contactos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active text-white" href="#">Envios</a>
+                          </li>
+                        </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
             </div>
         </header>
             <main class="main">
@@ -94,6 +115,7 @@
                 </div>
                 </div>
         </footer>
-    </div>     
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>       
 </body>
 </htm>
