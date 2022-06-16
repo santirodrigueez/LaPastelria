@@ -267,12 +267,19 @@ footer{
     border: 2px solid rgb( 235, 181, 213);
 }
 
+main{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
 .contacto{
+    display: inline-block;
+    justify-content: center;
     width: 400px;
     padding: 70px;
     margin-top: 90px;
     margin-bottom: 90px;
-    margin-left: 650px;
     border-radius: 4px;
     background-color: rgb(196, 134, 172);
     color: white;
