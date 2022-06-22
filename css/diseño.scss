@@ -1,3 +1,5 @@
+@import "colores";
+
 body{
     box-sizing: border-box;
     padding: 0px;
@@ -14,7 +16,7 @@ body{
 /*header*/
 
 nav{
-    background: rgb(235, 181, 213);
+    background:$colorPrimario;
     height: 125px;
     width: 100%;
 }
@@ -39,9 +41,24 @@ nav{
     display: none;
 }
 
+.contorno{
+    -webkit-text-stroke-color: 3px #000000;
+
+}
+
 #check{
     display: none;
 }
+
+.text__nav1{
+    font-size: 25px;
+}
+
+.text__nav2{
+    margin-top: 10px;
+    font-size: 21px;
+}
+
 /*header*/
 
 /*footer*/
@@ -51,7 +68,7 @@ footer{
     padding: 10px 0px;
     background-image: url(../background-footer.svg);
     background-size: cover;
-    background-color: rgb( 235, 181, 213);
+    background-color: $colorPrimario;
 }
 
 .footer{
@@ -67,42 +84,41 @@ footer{
     margin-top: 40px;
 }
 
+.logo2{
+    width: 350px;
+}
+
 .box__footer{
     display: flex;
     flex-direction: column;
     padding: 10px;
-}
-
-.box__footer .logo img{
-    width: 200px;
-}
-
-.box__footer{
     max-width: 140px;
     font-weight: 500;
     color: #7a7a7a;
     font-size: 18px;
-}
-
-.box__footer h2{
-    margin-bottom: 30px;
-    color: #000000;
-    font-weight: 700;
-    text-align: center;
-}
-
-.box__footer a{
-    height: 25px;
-    margin-top: 15px;
-    color: #ffffff;
-    font-weight: 600;
-    border-radius: 30%;
-    text-align: center;
-}
-
-.box__footer a:hover{
-    background: rgb(226, 134, 189);
-    transition: 0.5s;
+    .logo{
+        img{
+            width: 200px;
+        }
+    }
+    h2{
+        margin-bottom: 30px;
+        color: #000000;
+        font-weight: 700;
+        text-align: center;
+    }
+    a{
+        height: 25px;
+        margin-top: 15px;
+        color: #ffffff;
+        font-weight: 600;
+        border-radius: 30%;
+        text-align: center;
+        &:hover{
+            background: rgb(226, 134, 189);
+            transition: 0.5s;
+        }
+    }
 }
 
 /*footer*/
@@ -115,12 +131,12 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 100px 50px;
+    padding: 150px 50px;
 }
 
 .tituloprodructos{
     position: relative;
-    top: 120px;
+    top: 150px;
 }
 
 /*esto lo hice para practicar*/
@@ -132,12 +148,11 @@ footer{
     transition: 0.5s;
     filter: blur(0px);
     border-radius: 2%;
-}
-
-.img:hover {
-    transform: scale(1.07);
+    &:hover{
+        transform: scale(1.07);
     border-radius: 5%;
     filter: blur(0.8px);
+    }
 }
 
 .page__content{
@@ -151,23 +166,25 @@ footer{
 .product__container{
     margin-left: 15px;
     padding: 2px 16px;
-}
-
-.product__container:hover{
-    box-shadow: 0 8px 16px 0 rgb(58, 56, 56);
-    transition: all 0.7s;
-    border-radius: 3%;
-    zoom: 100.5%;
-}
-
-.product__container img{
-    width: 390px;
+    &:hover{
+        box-shadow: 0 8px 16px 0 rgb(58, 56, 56);
+        transition: all 0.7s;
+        border-radius: 3%;
+        zoom: 100.5%;
+    }
+    img{
+        width: 390px;
+    }
 }
 
 .img__producto{
     object-fit: cover;
     transition: 0.5s;
     border-radius: 2%;
+    &:hover{
+        transform: scale(1.2);
+        border-radius: 5%;
+    }
 }
 
 .img__destacado{
@@ -177,17 +194,16 @@ footer{
 .destacado{
     transition: 1s;
     margin-bottom: -140px;
-}
-
-.destacado:hover{
-    transform: scale(1.01);
-    transition: 1s;   
+    &:hover{
+        transform: scale(1.01);
+        transition: 1s;
+    }
 }
 
 .button_destacado{
-    position: relative;
-    top: -290px;
-    left: 90px;
+    display: inline-block;
+    justify-content: center;
+    margin-left: 45px;
     border: none;
     font-size: 16px;
     transition-duration: 40ms;
@@ -195,18 +211,12 @@ footer{
     border-radius: 8px;
     background-color: white;
     color: black;
-    border: 2px solid rgb( 235, 181, 213);
-}
-
-.button_destacado:hover{
-    background-color: rgb( 235, 181, 213);
-    color: white;
-    transition: 0.2s;
-}
-
-.img__producto:hover{
-    transform: scale(1.2);
-    border-radius: 5%;
+    border: 2px solid $colorPrimario;
+    &:hover{
+        background-color: $colorPrimario;
+        color: white;
+        transition: 0.2s;
+    }
 }
 
 .text__destacado{
@@ -238,13 +248,12 @@ footer{
     border-radius: 8px;
     background-color: white;
     color: black;
-    border: 2px solid rgb( 235, 181, 213);
-}
-
-.button__add:hover{
-    background-color: rgb( 235, 181, 213);
-    color: white;
-    transition: 0.2s;
+    border: 2px solid $colorPrimario;
+    &:hover{
+        background-color: $colorPrimario;
+        color: white;
+        transition: 0.2s;
+    }
 }
 
 .sumbit__button{
@@ -255,65 +264,113 @@ footer{
     border-radius: 8px;
     background-color: white;
     color: black;
-    border: 2px solid rgb( 235, 181, 213);
+    border: 2px solid $colorPrimario;
+}
+
+main{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
 }
 
 .contacto{
+    display: inline-block;
+    justify-content: center;
     width: 400px;
     padding: 70px;
     margin-top: 90px;
     margin-bottom: 90px;
-    margin-left: 650px;
     border-radius: 4px;
     background-color: rgb(196, 134, 172);
     color: white;
 }
+
 .input__contacto{
-        width: 100%;
-        padding: 10px;
-        border-radius: 4px;
-        margin-bottom:10px;
-        border: 1px solid rgb( 235, 181, 213);
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom:10px;
+    border: 1px solid $colorPrimario;
 }
-/*
-@media (max-width: 1000px){
+
+@media (max-width: 1024px){
     .enlace{
         padding-left: 20px;
     }
     nav ul li a{
         font-size: 16px;
     }
+    #logo__mediaqueri{
+        position: fixed;
+        display: flex;
+        justify-content: right;
+    }
+    .text__destacado{
+        width: 1025px;
+        height: 90px;
+    }
+    .text__destacado__title{
+        margin-top: -35px;
+        font-size: 20px;
+    }
+    .text__destacado__title2{
+        font-size: 25px;
+    }
+    .button_destacado{
+        font-size: 12px;
+    }
+    .logo{
+        width: 130px;
+    }
+    .logo2{
+        width: 150px;
+    }
+    .img{
+        width: 400px;
+        height: 250px;
+    }
 }
 
-@media (max-width: 960px){
-    .checkbtn{
-        display: block;
+@media (max-width: 768px){
+    .destacado__box{
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
     }
-    ul{
-        position: fixed;
-        width: 200px;
-        height: 20px;
-        background: rgb( 235, 181, 213);
-        top: 110px;
-        left: 100%;
-        text-align: center;
-        transition: all .5s;
-        border-radius: 20px;
+    .text__destacado{
+        width: 0px;
+        height: 0px;
     }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 10px;
-        text-align: start;
+    .productos{
+        padding: 200px 50px;
     }
-    nav ul li a{
-        font-size: 18px;
+    
+    .tituloprodructos{
+        top: 200px;
     }
-    li a:hover, li a.active{
-        background: none;
-        color: rgb( 235, 181, 213);
+    .img{
+        width: 300px;
+        height: 200px;
     }
-    #check:checked ~ ul{
-        left:0;
+}
+
+@media (max-width: 425px){
+    .img{
+        width: 380px;
+        height: 200px;
     }
-}*/
+    .logo{
+        width: 130px;
+    }
+    .destacado__box{
+        margin-bottom: 100px;
+    }
+    .destacado__box{
+        visibility: hidden;
+    }
+    .text__destacado{
+        width: 0px;
+        height: 0px;
+    }
+}
+    
