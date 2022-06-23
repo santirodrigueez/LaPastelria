@@ -5,105 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hecho En La Pasteleria</title>
-    <script src="https://kit.fontawesome.com/8cedad4e99.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="./diseño.css">
+    <link rel="stylesheet" href="css/diseño.css">
+    <script src="https://kit.fontawesome.com/8cedad4e99.js" crossorigin="anonymous"></script>   
 </head>
 <body>
     <div class="grid__container">
-        <header class="header bg-primary ">
-    <nav class="navbar navbar-expand-lg" style="background-color:#ebb5d5;">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
+        <header class="header">
+            <nav class="navbar navbar-expand-lg" style="background-color:#ebb5d5; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html"><img class="logo" src="Imagenes/logo.jpg"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active text__nav1" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i>Inicio</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text__nav1" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bag-shopping"></i>Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="Paginas/tortasclasicas.html">Tortas Clasicas</a></li>
+                          <li><a class="dropdown-item" href="Paginas/minitortas.html">Mini Tortas</a></li>
+                          <li><a class="dropdown-item" href="#">Box Dulces</a></li>
+                          <li><a class="dropdown-item" href="Paginas/macarons.html">Macarons</a></li>
+                            </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fa-solid text__nav2" href="contacto.html"><i class="fa-solid fa-phone"></i>Contactos</a>
+                      </li>
+                      
+                      <li class="nav-item">
+                        <a class="nav-link fa-solid btn- text__nav2" href="#"><i class="fa-solid fa-car"></i>Envios</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
         </header>
             <main class="main">
-                <a href="/Paginas/minitortas.html"><div class="destacado">
-                    <div class="text__destacado">
-                        <h2 class="text__destacado__title">Producto Destacado</h2>
-                        <h4 class="text__destacado__title2">Mini Tortas</h4>
-                    </div>    
-                    <img class="img__destacado" src="/Imagenes/20190328_124541.jpg" alt="">
-                    <button class="button_destacado">Mas Informacion</button> 
-                </div></a>
+                <div class="destacado__box">
+                    <a href="Paginas/minitortas.html"><div class="destacado">
+                        <div class="text__destacado">
+                            <h2 class="text__destacado__title">Producto Destacado</h2>
+                            <h4 class="text__destacado__title2">Mini Tortas</h4>
+                            <button class="button_destacado">Mas Informacion</button> 
+                        </div>    
+                        <img class="img__destacado" src="Imagenes/producto.destacado.jpg" alt="">
+                    </div></a>
+                </div>
                 <h1 class="tituloprodructos">Productos</h1>
                     <section class="productos">
                             <div class="section__article__div">
                                 <h2>Tortas Clasicas</h2>
-                                <a href="./Paginas/tortasclasicas.html"><img class="img" src="./Imagenes/Catalogo1.png"></a>
+                                <a href="./Paginas/tortasclasicas.html"><img class="img" src="./Imagenes/catalogo1.png"></a>
                             </div>    
                             <div class="section__article__div">
                                 <h2>Mini Tortas</h2>
-                                <a href="/Paginas/minitortas.html"><img class="img" src="./Imagenes/Catalogo2.jpg"></a>
+                                <a href="./Paginas/minitortas.html"><img class="img" src="./Imagenes/catalogo2.jpg"></a>
                             </div>
                             <div class="section_article__div">
                                 <h2>Box Dulces</h2>
-                                <a href="/Paginas/boxdulces.html"><img class="img" src="./Imagenes/Catalogo3.jpg"></a>
+                                <a href="./Paginas/boxdulces.html"><img class="img" src="./Imagenes/catalogo3.jpg"></a>
                            </div>
                             <div class="section__article__div">
                                 <h2>Macarons</h2>
-                                <a href="/Paginas/macarons.html"><img class="img" src="./Imagenes/Catalogo4.jpg"></a>
+                                <a href="./Paginas/macarons.html"><img class="img" src="./Imagenes/catalogo4.jpg"></a>
                             </div>    
                             <div class="section__article__div">
                                 <h2>Secos</h2>
-                                <a href="/Paginas/secos.html"><img class="img" src="./Imagenes/Catalogo5.jpg"></a>
+                                <a href="./Paginas/secos.html"><img class="img" src="./Imagenes/catalogo5.jpg"></a>
                             </div>
                             <div class="section__article__div">
                                 <h2>Cotillon</h2>
-                                <a href="/Paginas/cotillon.html"><img class="img" src="./Imagenes/Catalogo6.jpg"></a>
+                                <a href="./Paginas/cotillon.html"><img class="img" src="./Imagenes/catalogo6.jpg"></a>
                            </div>
-                            <!--es solo para que ocupe espacio-->
                             <div class="section__article__div">
                                 <h2>Especiales</h2>
-                                <a href="/Paginas/especiales.html"><img class="img" src="./Imagenes/Catalogo7.jpg"></a>
+                                <a href="./Paginas/especiales.html"><img class="img" src="./Imagenes/catalogo7.jpg"></a>
                            </div>    
                     </section>
             </main> <!--las imagenes luego las voy a cambiar por algunas que tengan todas la misma resolucion, asi no tengo que estirarlas.--->    
             <footer class="footer">
                 <div class="container__footer">
                     <div class="box__footer">
-                        <div class="logo">
-                            <img src="/Imagenes/Logo.jpg">
+                        <div>
+                            <img class="logo2" src="Imagenes/logo.jpg">
                         </div>
                     </div>
                 
                 <div class="box__footer">
                     <h2>Navegacion</h2>
-                    <a href="/index.html"<i class="fa-solid fa-house"></i>Inicio</a>
+                    <a href="index.html"<i class="fa-solid fa-house"></i>Inicio</a>
                     <a href="#" <i class="fa-solid fa-bag-shopping"></i>Productos</a>
-                    <a href="/contacto.html" <i class="fa-solid fa-phone"></i>Contactos</a>
+                    <a href="contacto.html" <i class="fa-solid fa-phone"></i>Contactos</a>
                     <a href="#" <i class="fa-solid fa-car"></i>Envios</a>
                 </div>
             
