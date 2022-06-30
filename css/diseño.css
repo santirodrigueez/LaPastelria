@@ -133,21 +133,20 @@ footer {
 }
 
 /*esto lo hice para practicar*/
-.img {
-  width: 450px;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: 0.5s;
-  filter: blur(0px);
-  border-radius: 2%;
-}
-.img:hover {
-  transform: scale(1.07);
-  border-radius: 5%;
-  filter: blur(0.8px);
-}
-
+/*
+.img{
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    transition: 0.5s;
+    filter: blur(0px);
+    border-radius: 2%;
+    &:hover{
+        transform: scale(1.07);
+    border-radius: 5%;
+    filter: blur(0.8px);
+    }
+}*/
 .page__content {
   display: flex;
   flex-wrap: wrap;
