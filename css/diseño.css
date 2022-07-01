@@ -30,16 +30,15 @@ nav {
 
 .checkbtn {
   font-size: 30px;
-  color: #fff;
+  color: white;
   float: right;
   line-height: 80px;
   margin-right: 40px;
-  cursor: pointer;
   display: none;
 }
 
 .contorno {
-  -webkit-text-stroke-color: 3px #000000;
+  -webkit-text-stroke-color: 3px black;
 }
 
 #check {
@@ -96,14 +95,14 @@ footer {
 }
 .box__footer h2 {
   margin-bottom: 30px;
-  color: #000000;
+  color: black;
   font-weight: 700;
   text-align: center;
 }
 .box__footer a {
   height: 25px;
   margin-top: 15px;
-  color: #ffffff;
+  color: white;
   font-weight: 600;
   border-radius: 30%;
   text-align: center;
@@ -275,7 +274,7 @@ main {
   margin-top: 90px;
   margin-bottom: 90px;
   border-radius: 4px;
-  background-color: rgb(196, 134, 172);
+  background-color: rgb(226, 134, 189);
   color: white;
 }
 

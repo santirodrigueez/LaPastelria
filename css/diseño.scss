@@ -1,4 +1,8 @@
 @import "colores";
+@mixin tamaño($width, $height) {
+    width: 100%;
+    height: 100%;
+}
 
 body{
     box-sizing: border-box;
@@ -33,16 +37,15 @@ nav{
 
 .checkbtn{
     font-size: 30px;
-    color: #fff;
+    color: map-get($map: $mapaColores, $key: blanco);
     float: right;
     line-height: 80px;
     margin-right: 40px;
-    cursor: pointer;
     display: none;
 }
 
 .contorno{
-    -webkit-text-stroke-color: 3px #000000;
+    -webkit-text-stroke-color: 3px map-get($map: $mapaColores, $key: negro);
 
 }
 
@@ -103,19 +106,19 @@ footer{
     }
     h2{
         margin-bottom: 30px;
-        color: #000000;
+        color: map-get($map: $mapaColores, $key: negro);
         font-weight: 700;
         text-align: center;
     }
     a{
         height: 25px;
         margin-top: 15px;
-        color: #ffffff;
+        color: map-get($map: $mapaColores, $key: blanco);
         font-weight: 600;
         border-radius: 30%;
         text-align: center;
         &:hover{
-            background: rgb(226, 134, 189);
+            background: map-get($map: $mapaColores, $key: rosaoscuro);
             transition: 0.5s;
         }
     }
@@ -211,12 +214,12 @@ footer{
     transition-duration: 40ms;
     text-align: center;
     border-radius: 8px;
-    background-color: white;
-    color: black;
+    background-color: map-get($map: $mapaColores, $key: blanco);
+    color: map-get($map: $mapaColores, $key: negro);
     border: 2px solid $colorPrimario;
     &:hover{
         background-color: $colorPrimario;
-        color: white;
+        color: map-get($map: $mapaColores, $key: blanco);
         transition: 0.2s;
     }
 }
@@ -230,13 +233,13 @@ footer{
 }
 
 .text__destacado__title{
-    color: white;
+    color: map-get($map: $mapaColores, $key: blanco);
     font-size: 40px;
     margin-left: 60px;
 }
 
 .text__destacado__title2{
-    color: white;
+    color: map-get($map: $mapaColores, $key: blanco);
     font-size: 28px;
     margin-left: 60px;
     margin-top: -10px;
@@ -248,12 +251,12 @@ footer{
     transition-duration: 40ms;
     text-align: center;
     border-radius: 8px;
-    background-color: white;
-    color: black;
+    background-color: map-get($map: $mapaColores, $key: blanco);
+    color: map-get($map: $mapaColores, $key: negro);
     border: 2px solid $colorPrimario;
     &:hover{
         background-color: $colorPrimario;
-        color: white;
+        color: map-get($map: $mapaColores, $key: blanco);
         transition: 0.2s;
     }
 }
@@ -264,8 +267,8 @@ footer{
     transition-duration: 40ms;
     text-align: center;
     border-radius: 8px;
-    background-color: white;
-    color: black;
+    background-color: map-get($map: $mapaColores, $key: blanco);
+    color: map-get($map: $mapaColores, $key: negro);
     border: 2px solid $colorPrimario;
 }
 
@@ -283,8 +286,8 @@ main{
     margin-top: 90px;
     margin-bottom: 90px;
     border-radius: 4px;
-    background-color: rgb(196, 134, 172);
-    color: white;
+    background-color: map-get($map: $mapaColores, $key: rosaoscuro);
+    color: map-get($map: $mapaColores, $key: blanco);
 }
 
 .input__contacto{
