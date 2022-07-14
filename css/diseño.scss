@@ -370,6 +370,9 @@ main{
 }
 
 @media (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
     .destacado__box{
         visibility: hidden;
         height: 0px;
